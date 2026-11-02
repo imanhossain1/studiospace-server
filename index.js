@@ -5,7 +5,7 @@ import cors from "cors";
 import "dotenv/config";
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 // middleware
 app.use(cors());
@@ -32,7 +32,7 @@ const studios = db.collection("studios");
 
 // Home Route
 app.get("/", (req, res) => {
-  res.send("StudioSpace Server is Running");
+  res.send("StudioSpace Server is Running fine");
 });
 
 // Get All Studios
